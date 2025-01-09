@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .receipt {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .receipt h3 {
+            margin-top: 0;
+        }
+
+        .receipt .list-group-item {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>Payment Receipt</h1>
+        <p>Your order has been successfully processed.</p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Payment Receipt -->
+        <div class="receipt">
+            <h3>Billing Information</h3>
+            <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>First Name:</span>
+                    <span id="receiptFirstName"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Last Name:</span>
+                    <span id="receiptLastName"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Address:</span>
+                    <span id="receiptAddress"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Email:</span>
+                    <span id="receiptEmail"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Payment Method:</span>
+                    <span id="receiptPaymentMethod"></span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Total (USD):</span>
+                    <strong class="total" id="receiptTotal">$1,699.97</strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Get the query parameters from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Fill the receipt with data from the URL parameters
+        document.getElementById('receiptFirstName').textContent = urlParams.get('firstName');
+        document.getElementById('receiptLastName').textContent = urlParams.get('lastName');
+        document.getElementById('receiptAddress').textContent = urlParams.get('address');
+        document.getElementById('receiptEmail').textContent = urlParams.get('email');
+        document.getElementById('receiptPaymentMethod').textContent = urlParams.get('paymentMethod');
+    </script>
+
+</body>
+</html>

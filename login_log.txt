@@ -1,0 +1,128 @@
+[2024-11-12 01:21:41] Login gagal: Password salah untuk user: admin
+[2024-11-12 01:22:31] Login gagal: Password salah untuk user: admin
+[2024-11-12 01:22:55] Login gagal: Password salah untuk user: admin
+[2024-11-12 01:23:10] Login gagal: Password salah untuk user: admin
+[2024-11-12 01:26:48] Login gagal: Username tidak ditemukan: 
+[2024-11-12 01:27:36] Login sukses untuk user: afifudin
+[2024-11-12 01:28:09] Login sukses untuk user: afifudin
+[2024-11-12 01:28:12] Login sukses untuk user: afifudin
+[2024-11-12 01:33:57] Login sukses untuk user: afifudin
+[2024-11-12 01:34:08] Login gagal: Username tidak ditemukan: fit
+[2024-11-12 01:36:51] Login gagal: Username tidak ditemukan: nit
+[2024-11-12 01:36:58] Login sukses untuk user: afifudin
+[2024-11-12 01:36:59] Login sukses untuk user: afifudin
+[2024-11-12 01:39:25] Login gagal: Username tidak ditemukan: nathan
+[2024-11-12 01:39:35] Login sukses untuk user: afifudin
+[2024-11-12 04:57:47] Login sukses untuk user: tua
+[2024-11-12 04:58:28] Login gagal: Username tidak ditemukan: afif
+[2024-11-12 05:06:05] Login sukses untuk user: afifudin
+[2024-11-12 18:58:10] Login sukses untuk user: NATHAN
+[2024-11-13 06:11:04] Login sukses untuk user: afifudin
+[2024-11-13 06:12:04] Login sukses untuk user: afifudin
+[2024-11-13 08:37:58] Login sukses untuk user: afifudin
+[2024-11-13 08:54:16] Login sukses untuk user: afifudin
+[2024-11-15 07:00:08] Login sukses untuk user: afifudin
+[2024-11-15 07:12:33] Login gagal: Password salah untuk user: afifudin
+[2024-11-15 07:12:33] Error HTTP 401: Unauthorized
+[2024-11-15 07:12:42] Login gagal: Username tidak ditemukan: u9876573456
+[2024-11-15 07:12:42] Error HTTP 404: Not Found
+[2024-11-15 07:13:58] Login gagal: Username tidak ditemukan: u9876573456
+[2024-11-15 07:13:58] Error HTTP 404: Not Found
+[2024-11-15 07:14:16] Login sukses untuk user: afifudin
+[2024-11-15 07:14:31] Login gagal: Username tidak ditemukan: afifudin98
+[2024-11-15 07:14:31] Error HTTP 404: Not Found
+[2024-11-15 07:15:58] Error HTTP 404: Not Found - Username tidak ditemukan.
+[2024-11-15 07:16:50] Login gagal: Username tidak ditemukan: afifudin98
+[2024-11-15 07:17:12] Login sukses untuk user: afifudin
+[2024-11-15 07:17:24] Login gagal: Password salah untuk user: afifudin
+[2024-11-15 07:20:16] Login gagal: Password salah untuk user: TuaBangka
+[2024-11-15 07:20:28] Login sukses untuk user: TuaBangka
+[2024-11-15 07:21:27] Login sukses untuk user: afifudin
+[2024-11-15 07:46:18] Login sukses untuk user: joshua
+[2024-11-15 07:47:27] Login gagal: Password salah untuk user: joshua
+[2024-11-15 07:47:54] Login gagal: Username tidak ditemukan: admin123
+[2024-11-23 14:45:11] Login sukses untuk user: afifudin
+[2024-12-11 04:09:15] Login sukses untuk user: afifudin
+[2024-12-11 06:12:41] Login sukses untuk user: afifudin
+[2024-12-11 07:20:44] Login sukses untuk user: afifudin
+[2024-12-12 03:26:32] Login sukses untuk user: afifudin
+[2024-12-12 04:06:22] Login sukses untuk user: afifudin
+[2024-12-12 04:32:13] Login sukses untuk user: afifudin
+[2024-12-12 05:03:54] Login sukses untuk user: afifudin
+[2024-12-12 05:06:09] Login sukses untuk user: afifudin
+[2024-12-12 05:07:11] Login sukses untuk user: afifudin
+[2024-12-12 05:08:12] Login sukses untuk user: afifudin
+[2024-12-12 06:01:00] Login sukses untuk user: afifudin
+[2024-12-13 10:17:52] Login sukses untuk user: afifudin
+[2024-12-13 10:21:18] Login sukses untuk user: afifudin
+[2024-12-14 06:31:46] Login sukses untuk user: afifudin
+[2024-12-14 06:37:33] Login sukses untuk user: afifudin
+[2024-12-15 05:34:46] Login sukses untuk user: afifudin
+[2024-12-15 05:37:04] Login sukses untuk user: afifudin
+[2024-12-15 10:51:25] Login sukses untuk user: afifudin
+[2024-12-15 10:54:11] Login sukses untuk user: afifudin
+[2024-12-15 11:00:54] Login sukses untuk user: afifudin
+[2024-12-15 12:12:56] Login gagal: Captcha tidak valid
+[2024-12-15 13:33:18] Login gagal: Captcha tidak valid
+[2024-12-15 13:36:25] Login gagal: Captcha tidak valid
+[2024-12-15 13:36:54] Login gagal: Captcha tidak valid
+[2024-12-15 13:37:00] Login gagal: Captcha tidak valid
+[2024-12-15 13:39:44] Login gagal: Captcha tidak valid
+[2024-12-15 13:46:33] Login sukses untuk user: afifudin
+[2024-12-15 13:46:42] Login sukses untuk user: afifudin
+[2024-12-15 14:00:32] Login gagal: Username tidak ditemukan: afif
+[2024-12-15 14:00:39] Login sukses untuk user: afifudin
+[2024-12-15 14:24:50] Login sukses untuk user: afifudin
+[2024-12-16 04:19:42] Login sukses untuk user: afifudin
+[2024-12-16 07:43:17] Login sukses untuk user: afifudin
+[2024-12-16 07:53:21] Login sukses untuk user: afifudin
+[2024-12-16 07:54:16] Login sukses untuk user: afifudin
+[2024-12-16 08:17:07] Login gagal: Username tidak ditemukan: afifudin98
+[2024-12-17 05:41:02] Login sukses untuk user: afifudin
+[2024-12-17 06:09:18] Login sukses untuk user: afifudin
+[2024-12-17 06:15:53] Login gagal: Username tidak ditemukan: admin
+[2024-12-17 06:16:09] Login gagal: Password salah untuk user: afifudin
+[2024-12-17 06:16:24] Login sukses untuk user: afifudin
+[2024-12-17 06:30:51] Login sukses untuk user: afifudin
+[2024-12-17 07:05:29] Login sukses untuk user: afifudin
+2024-12-17 07:05:53 | Transaction ID: 0 | Name: joya | Total: Rp 100.000
+2024-12-17 07:14:24 | Transaction ID: 0 | Name: ilham | Total: Rp 20.000
+2024-12-17 07:23:30 | Transaction ID: 0 | Name: Ilham | Total: Rp 20.000
+[2024-12-17 07:27:54] Login gagal: Password salah untuk user: fajri ridho
+[2024-12-17 07:28:12] Login sukses untuk user: fajri ridho
+[2024-12-17 07:30:57] - User registered: joya, Email: joya@gmail.com
+[2024-12-17 07:36:20] Login sukses untuk user: afifudin
+[2024-12-17 07:37:04] - Product listed: baju batik, Category: pakaian, Price: 70000, Image: batik.jpg
+[2024-12-17 09:11:55] Login sukses untuk user: afifudin
+2024-12-17 09:13:20 | Transaction ID: 0 | Name: afif | Total: Rp 20.000
+[2024-12-17 10:19:34] Login sukses untuk user: afifudin
+[2024-12-19 01:38:17] Login sukses untuk user: afifudin
+[2024-12-21 05:29:01] Login sukses untuk user: afifudin
+[2024-12-21 05:30:16] - Invalid file type for product: aksesoris hp. Type: image/webp
+[2024-12-21 05:35:39] - Failed to list product: kopi. Error: No data supplied for parameters in prepared statement
+[2024-12-21 05:36:38] - Failed to list product: kopi. Error: No data supplied for parameters in prepared statement
+[2024-12-21 05:37:15] - Failed to list product: kopi. Error: No data supplied for parameters in prepared statement
+[2024-12-21 05:38:37] - Failed to list product: kopi. Error: No data supplied for parameters in prepared statement
+[2024-12-21 05:39:06] - Failed to list product: kopi. Error: No data supplied for parameters in prepared statement
+[2024-12-21 05:40:55] - Failed to list product: kopi. Error: No data supplied for parameters in prepared statement
+[2024-12-21 05:43:11] - Product listed: kopi, Category: minuman, Quantity:2,  Price: 15000, Image: chatime.jpg
+[2024-12-21 05:44:25] - Product listed: kopi, Category: minuman, Quantity:2,  Price: 15000, Image: chatime.jpg
+[2024-12-21 05:44:52] - Product listed: kopi, Category: minuman, Quantity:3,  Price: 15000, Image: chatime.jpg
+[2024-12-21 05:46:18] Login sukses untuk user: afifudin
+[2024-12-21 06:10:17] Login sukses untuk user: afifudin
+[2024-12-21 06:11:22] - Product listed: White Coffee, Category: minuman, Quantity:2,  Price: 8000, Image: DSC09410-removebg-preview.png
+[2024-12-21 15:54:12] Login gagal: Password salah untuk user: afifudin
+[2024-12-21 15:54:29] Login sukses untuk user: afifudin
+[2024-12-21 15:55:41] - Product listed: kripik, Category: makanan, Quantity:4,  Price: 3000, Image: hampers.jpg
+[2024-12-21 19:46:25] Login sukses untuk user: afifudin
+[2024-12-21 19:47:34] - Product listed: kacamat hitam bali, Category: aksesoris, Quantity:5,  Price: 20000, Image: WhatsApp Image 2024-12-13 at 4.44.37 PM (2).jpeg
+[2024-12-22 03:16:16] Login sukses untuk user: afifudin
+[2024-12-23 07:41:55] Login sukses untuk user: afifudin
+[2024-12-23 07:43:33] - Product listed: Hand Bag, Category: aksesoris, Quantity:10,  Price: 50000, Image: WhatsApp Image 2024-12-13 at 4.44.37 PM (1).jpeg
+[2024-12-23 07:58:22] Login gagal: Password salah untuk user: afifudin
+[2024-12-23 07:58:33] Login sukses untuk user: afifudin
+[2024-12-23 08:16:35] Login sukses untuk user: afifudin
+[2024-12-27 17:49:05] Status 200: Login sukses (User: darwis)
+[2024-12-27 18:02:58] - [200] Registrasi berhasil: duta, Email: duta@gmail.com
+[2024-12-27 18:03:10] Status 200: Login sukses (User: duta)
+[2025-01-09 08:12:08] Status 200: Login sukses (User: afifudin)

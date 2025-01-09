@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+
+        .cart-summary {
+            margin-bottom: 30px;
+        }
+
+        .total {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+
+        .form-control {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<!-- Header -->
+<div class="header">
+    <h1>Checkout</h1>
+    <p>Review your items and print the receipt</p>
+</div>
+
+<!-- Cart Items -->
+<div class="container">
+    <h3>Items in your cart:</h3>
+    <div id="cart-items" class="row"></div>
+
+    <!-- Total Price -->
+    <h4>Total: <span id="total-price">0</span></h4>
+
+    <!-- Buttons -->
+    <button id="generate-receipt" class="btn btn-primary">Generate Receipt</button>
+    <button id="confirm-order" class="btn btn-success">Confirm Order</button>
+    <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+</div>
+
+<!-- Receipt -->
+<div id="receipt" class="container mt-4" style="display: none; border: 1px solid #ccc; padding: 20px;">
+    <h3>Receipt</h3>
+    <p><strong>Date:</strong> <span id="receipt-date"></span></p>
+    <ul id="receipt-items"></ul>
+    <h4>Total: <span id="receipt-total">0</span></h4>
+    <button id="print-receipt" class="btn btn-secondary">Print Receipt</button>
+</div>
+
+<!-- Custom JavaScript -->
+<script>
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartItemsContainer = document.getElementById('cart-items');
+    const totalPriceElement = document.getElementById('total-price');
+    const receiptContainer = document.getElementById('receipt');
+    const receiptItemsContainer = document.getElementById('receipt-items');
+    const receiptTotalElement = document.getElementById('receipt-total');
+    const receiptDateElement = document.getElementById('receipt-date');
+
+    function renderCart() {
+        cartItemsContainer.innerHTML = '';
+        let totalPrice = 0;
+
+        cart.forEach(item => {
+            const col = document.createElement('div');
+            col.className = 'col-md-4 mb-4';
+
+            const card = document.createElement('div');
+            card.className = 'card';
+
+            const img = document.createElement('img');
+            img.src = item.image;
+            img.className = 'card-img-top';
+            img.alt = item.name;
+
+            const body = document.createElement('div');
+            body.className = 'card-body';
+
+            const title = document.createElement('h5');
+            title.textContent = item.name;
+
+            const price = document.createElement('p');
+            price.textContent = `Rp${item.price}`;
+
+            // Append elements
+            body.appendChild(title);
+            body.appendChild(price);
+            card.appendChild(img);
+            card.appendChild(body);
+            col.appendChild(card);
+            cartItemsContainer.appendChild(col);
+
+            totalPrice += parseInt(item.price, 10);
+        });
+
+        totalPriceElement.textContent = `Rp${totalPrice}`;
+    }
+
+    function generateReceipt() {
+        if (cart.length === 0) {
+            alert('Your cart is empty.');
+            return;
+        }
+
+        // Set receipt date
+        const now = new Date();
+        receiptDateElement.textContent = now.toLocaleString();
+
+        // Render items in receipt
+        receiptItemsContainer.innerHTML = '';
+        let totalPrice = 0;
+
+        cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - Rp${item.price}`;
+            receiptItemsContainer.appendChild(li);
+
+            totalPrice += parseInt(item.price, 10);
+        });
+
+        receiptTotalElement.textContent = `Rp${totalPrice}`;
+        receiptContainer.style.display = 'block'; // Show receipt
+    }
+
+    function printReceipt() {
+        const receiptHTML = receiptContainer.outerHTML;
+        const newWindow = window.open('', '_blank');
+        newWindow.document.write('<html><head><title>Receipt</title></head><body>');
+        newWindow.document.write(receiptHTML);
+        newWindow.document.write('</body></html>');
+        newWindow.document.close();
+        newWindow.print();
+    }
+
+    document.getElementById('generate-receipt').addEventListener('click', generateReceipt);
+
+    document.getElementById('print-receipt').addEventListener('click', printReceipt);
+
+    document.getElementById('confirm-order').addEventListener('click', () => {
+        if (cart.length > 0) {
+            alert('Order confirmed. Thank you for your purchase!');
+            localStorage.removeItem('cart');
+            window.location.href = 'index.html';
+        } else {
+            alert('Your cart is empty.');
+        }
+    });
+
+    document.getElementById('clear-cart').addEventListener('click', () => {
+        if (confirm('Are you sure you want to clear your cart?')) {
+            localStorage.removeItem('cart');
+            window.location.reload();
+        }
+    });
+
+    // Render cart on page load
+    renderCart();
+</script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Page</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .category-header {
+            text-align: center;
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 0;
+        }
+
+        .category-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .category-container {
+            padding: 30px 15px;
+        }
+
+        .category-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .category-card .card-body {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .category-card .card-body h5 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+
+        .category-card .card-body p {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .category-card .btn {
+            margin-top: 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+
+        .category-card .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Category Header -->
+    <div class="category-header">
+        <h1>Explore Our Categories</h1>
+        <p>Find products from your favorite categories</p>
+    </div>
+
+    <!-- Category Container -->
+    <div class="container category-container">
+        <div class="row">
+            <!-- Category 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Smartphones">
+                    <div class="card-body">
+                        <h5>Smartphones</h5>
+                        <p>Discover the latest smartphones with cutting-edge technology.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Laptops">
+                    <div class="card-body">
+                        <h5>Laptops</h5>
+                        <p>Find the perfect laptop for work, play, or study.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/400x200" alt="Accessories">
+                    <div class="card-body">
+                        <h5>Accessories</h5>
+                        <p>Complete your setup with our wide range of accessories.</p>
+                        <a href="#" class="btn btn-primary">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

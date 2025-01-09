@@ -1,0 +1,2 @@
+[2024-12-27 17:31:40] - [200] Registrasi berhasil: depol, Email: depol@gmail.com
+[2024-12-27 17:47:27] - [200] Registrasi berhasil: darwis, Email: darwis@gmail.com
